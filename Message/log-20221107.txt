@@ -1,0 +1,118 @@
+2022-11-07 00:20:51.312 +07:00 [ERR] There was an error while sending email
+System.ArgumentNullException: Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at Massege.MailKitEmailSender.Send(String toEmail, String subject, String htmlBody) in D:\source\repos\Massege\Message\MailKitEmailSender.cs:line 27
+   at Massege.ServerStartupNotificationBackgroundService.<>c__DisplayClass7_0.<ExecuteAsync>b__1(CancellationToken token) in D:\source\repos\Massege\Message\ServerStartupNotificationBackgroundService.cs:line 48
+   at Polly.Policy.<>c__DisplayClass123_0.<ExecuteAndCapture>b__0(Context _, CancellationToken ct)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+   at Polly.Retry.RetryPolicy.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Implementation(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.ExecuteAndCapture(Action`2 action, Context context, CancellationToken cancellationToken)
+2022-11-07 00:20:51.370 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-07 00:20:51.371 +07:00 [INF] Hosting environment: Development
+2022-11-07 00:20:51.374 +07:00 [INF] Content root path: D:\source\repos\Massege\Message\
+2022-11-07 00:20:51.405 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44337/ - -
+2022-11-07 00:20:51.439 +07:00 [INF] Executing endpoint 'HTTP: GET /'
+2022-11-07 00:20:51.441 +07:00 [INF] Executed endpoint 'HTTP: GET /'
+2022-11-07 00:20:51.443 +07:00 [ERR] HTTP GET / responded 500 in 14.4996 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at Massege.MailKitEmailSender.Send(String toEmail, String subject, String htmlBody) in D:\source\repos\Massege\Message\MailKitEmailSender.cs:line 27
+   at Program.<>c.<<Main>$>b__0_1(IEmailSender sender) in D:\source\repos\Massege\Message\Program.cs:line 59
+   at lambda_method1(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-11-07 00:20:51.451 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at Massege.MailKitEmailSender.Send(String toEmail, String subject, String htmlBody) in D:\source\repos\Massege\Message\MailKitEmailSender.cs:line 27
+   at Program.<>c.<<Main>$>b__0_1(IEmailSender sender) in D:\source\repos\Massege\Message\Program.cs:line 59
+   at lambda_method1(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-07 00:20:51.510 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44337/ - - - 500 - text/html;+charset=utf-8 110.8677ms
+2022-11-07 00:21:48.499 +07:00 [INF] Application is shutting down...
+2022-11-07 00:21:48.504 +07:00 [INF] Shut down complete
+2022-11-07 00:22:17.473 +07:00 [ERR] There was an error while sending email
+System.ArgumentNullException: Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at Massege.MailKitEmailSender.Send(String toEmail, String subject, String htmlBody) in D:\source\repos\Massege\Message\MailKitEmailSender.cs:line 27
+   at Massege.ServerStartupNotificationBackgroundService.<>c__DisplayClass7_0.<ExecuteAsync>b__1(CancellationToken token) in D:\source\repos\Massege\Message\ServerStartupNotificationBackgroundService.cs:line 48
+   at Polly.Policy.<>c__DisplayClass123_0.<ExecuteAndCapture>b__0(Context _, CancellationToken ct)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+   at Polly.Retry.RetryPolicy.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Implementation(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.ExecuteAndCapture(Action`2 action, Context context, CancellationToken cancellationToken)
+2022-11-07 00:22:17.534 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-07 00:22:17.535 +07:00 [INF] Hosting environment: Development
+2022-11-07 00:22:17.536 +07:00 [INF] Content root path: D:\source\repos\Massege\Message\
+2022-11-07 00:22:17.560 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44337/ - -
+2022-11-07 00:22:17.584 +07:00 [INF] Executing endpoint 'HTTP: GET /'
+2022-11-07 00:22:17.586 +07:00 [INF] Executed endpoint 'HTTP: GET /'
+2022-11-07 00:22:17.589 +07:00 [ERR] HTTP GET / responded 500 in 9.2611 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at Massege.MailKitEmailSender.Send(String toEmail, String subject, String htmlBody) in D:\source\repos\Massege\Message\MailKitEmailSender.cs:line 27
+   at Program.<>c.<<Main>$>b__0_1(IEmailSender sender) in D:\source\repos\Massege\Message\Program.cs:line 59
+   at lambda_method1(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-11-07 00:22:17.597 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'text')
+   at MimeKit.MailboxAddress.Parse(ParserOptions options, String text)
+   at MimeKit.MailboxAddress.Parse(String text)
+   at Massege.MailKitEmailSender.Send(String toEmail, String subject, String htmlBody) in D:\source\repos\Massege\Message\MailKitEmailSender.cs:line 27
+   at Program.<>c.<<Main>$>b__0_1(IEmailSender sender) in D:\source\repos\Massege\Message\Program.cs:line 59
+   at lambda_method1(Closure , Object , HttpContext )
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass36_0.<Create>b__0(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-07 00:22:17.648 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44337/ - - - 500 - text/html;+charset=utf-8 91.9136ms
+2022-11-07 00:23:02.413 +07:00 [INF] Application is shutting down...
+2022-11-07 00:23:02.418 +07:00 [INF] Shut down complete
+2022-11-07 00:23:15.085 +07:00 [ERR] There was an error while sending email
+MailKit.Net.Smtp.SmtpCommandException: <rpolisuk72gmail.com>: recipient address must contain a domain
+   at MailKit.Net.Smtp.SmtpClient.OnRecipientNotAccepted(MimeMessage message, MailboxAddress mailbox, SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.ProcessRcptToResponse(MimeMessage message, MailboxAddress mailbox, SmtpResponse response)
+   at MailKit.Net.Smtp.SmtpClient.FlushCommandQueueAsync(MimeMessage message, MailboxAddress sender, IList`1 recipients, Boolean doAsync, CancellationToken cancellationToken)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, Boolean doAsync, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, Boolean doAsync, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.Send(FormatOptions options, MimeMessage message, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.MailTransport.Send(MimeMessage message, CancellationToken cancellationToken, ITransferProgress progress)
+   at Massege.MailKitEmailSender.Send(String toEmail, String subject, String htmlBody) in D:\source\repos\Massege\Message\MailKitEmailSender.cs:line 34
+   at Massege.ServerStartupNotificationBackgroundService.<>c__DisplayClass7_0.<ExecuteAsync>b__1(CancellationToken token) in D:\source\repos\Massege\Message\ServerStartupNotificationBackgroundService.cs:line 48
+   at Polly.Policy.<>c__DisplayClass123_0.<ExecuteAndCapture>b__0(Context _, CancellationToken ct)
+   at Polly.Policy.<>c__DisplayClass138_0.<Implementation>b__0(Context ctx, CancellationToken token)
+   at Polly.Retry.RetryEngine.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken, ExceptionPredicates shouldRetryExceptionPredicates, ResultPredicates`1 shouldRetryResultPredicates, Action`4 onRetry, Int32 permittedRetryCount, IEnumerable`1 sleepDurationsEnumerable, Func`4 sleepDurationProvider)
+   at Polly.Retry.RetryPolicy.Implementation[TResult](Func`3 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Implementation(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.Execute(Action`2 action, Context context, CancellationToken cancellationToken)
+   at Polly.Policy.ExecuteAndCapture(Action`2 action, Context context, CancellationToken cancellationToken)
+2022-11-07 00:23:15.257 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-07 00:23:15.258 +07:00 [INF] Hosting environment: Development
+2022-11-07 00:23:15.259 +07:00 [INF] Content root path: D:\source\repos\Massege\Message\
+2022-11-07 00:23:15.285 +07:00 [INF] Request starting HTTP/2 GET https://localhost:44337/ - -
+2022-11-07 00:23:15.313 +07:00 [INF] Executing endpoint 'HTTP: GET /'
+2022-11-07 00:23:16.574 +07:00 [INF] Executed endpoint 'HTTP: GET /'
+2022-11-07 00:23:16.577 +07:00 [INF] HTTP GET / responded 200 in 1269.7967 ms
+2022-11-07 00:23:16.688 +07:00 [INF] Request finished HTTP/2 GET https://localhost:44337/ - - - 200 - - 1407.1560ms
+2022-11-07 00:28:55.859 +07:00 [INF] Application is shutting down...
+2022-11-07 00:28:55.863 +07:00 [INF] Shut down complete
