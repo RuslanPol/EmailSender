@@ -14,7 +14,7 @@ public class MailKitEmailSender : IEmailSender, IAsyncDisposable,IDisposable
     private readonly ILogger<MailKitEmailSender> _logger;
 
 
-    public MailKitEmailSender(IOptionsSnapshot<SmtpConfig> options, ILogger<MailKitEmailSender> logger)
+    public MailKitEmailSender(IOptions<SmtpConfig> options, ILogger<MailKitEmailSender> logger)
     {
         _smtpConfig = options.Value;
         _logger = logger;
